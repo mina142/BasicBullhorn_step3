@@ -5,13 +5,15 @@
     <title>Title</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body class="jumbotron">
+<body class="p-3 mb-2 bg-info text-white">
 <div th:replace="base :: navlinks"></div>
+<h1 class="jumbotron text-center" style="color: darkblue">Welcome To My Messaging App</h1>
 <a href="/">Show All Messages</a><br>
 Message: <span th:text="${message.content}"></span><br>
 Post Date: <span th:text="${message.postdate}"></span><br>
 Send By: <span th:text="${message.sentby}"></span><br>
-
+ <img th:src="${message.headshot}" />
+<br>
 <a th:href="@{/delete/{id}(id=${message.id})}">Delete this course</a>
 
 <div th:replace="base :: footer"></div>

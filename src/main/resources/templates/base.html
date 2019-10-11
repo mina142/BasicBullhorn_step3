@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+<style>
+.jumbotron {
+background-color: #f4511e; /* Orange */
+color: #ffffff;
+}
+</style>
 <head>
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
-<body class="jumbotron">
+<body class="">
     <div class="row" th:fragment="navlinks">
 
-        <div class="col-sm-2"><a class="btn btn-primary" href="">Home</a> </div>
-        <div class="col-sm-3"><a class="btn btn-primary" href="/">Show Messages</a></div>
-        <div class="col-sm-3"><a class="btn btn-primary" href="/add">Add Message</a> </div>
-        <div class="col-sm-2"><a class="btn btn-primary" href="">About Page</a></div>
+    <nav >
+        <ul class="nav">
+            <li>
+                <img src="https://image.freepik.com/free-vector/abstract-colorful-logo_23-2147504722.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+
+            </li>
+            <li class="nav-item"><a class="nav-link active" style="color: whitesmoke" href="">Home</a></li>
+           <li class="nav-item"><a class="nav-link active" style="color: whitesmoke" href="/">Show Messages</a></li>
+           <li class="nav-item"><a class="nav-link active" style="color: whitesmoke" href="/add">Add Message</a></li>
+           <li class="nav-item"><a class="nav-link active" style="color: whitesmoke" href="">About Page</a></li>
+
+        </ul>
+    </nav>
+
     </div>
-    <div th:fragment="footer">copyright 2019</div>
+
+    <div th:fragment="footer" class="fixed-bottom">copyright 2019</div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
